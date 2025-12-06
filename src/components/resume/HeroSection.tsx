@@ -59,13 +59,20 @@ export const HeroSection = () => {
               </div>
             </div>
 
-            {/* CTA Button */}
-            <div className="animate-fade-up delay-500">
+            {/* CTA Buttons */}
+            <div className="animate-fade-up delay-500 flex flex-wrap justify-center lg:justify-start gap-4">
               <a
-                href="#contact"
+                href="/Shibly_Sadik_Resume.pdf"
+                download
                 className="inline-flex items-center gap-2 px-8 py-4 gradient-bg rounded-full text-primary-foreground font-semibold hover:opacity-90 transition-all duration-300 hover:scale-105 glow"
               >
                 <Download className="w-5 h-5" />
+                Download Resume
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105"
+              >
                 Get In Touch
               </a>
             </div>
