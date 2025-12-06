@@ -26,9 +26,11 @@ export const HeroSection = () => {
 
           {/* Hero Content */}
           <div className="text-center lg:text-left flex-1">
-            <p className="text-primary font-medium tracking-wider uppercase mb-4 animate-fade-up delay-100">
-              Supply Chain Manager
-            </p>
+            <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full gradient-bg glow mb-4 animate-fade-up delay-100">
+              <span className="text-primary-foreground font-semibold tracking-wide uppercase text-sm">
+                Collection Manager
+              </span>
+            </div>
             <h1 className="font-display text-5xl lg:text-7xl font-bold mb-6 animate-fade-up delay-200">
               Shibly <span className="gradient-text">Sadik</span>
             </h1>
