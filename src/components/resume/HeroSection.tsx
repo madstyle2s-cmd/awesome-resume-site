@@ -14,7 +14,7 @@ export const HeroSection = () => {
             <img
               src={profilePhoto}
               alt="Portrait of Shibly Sadik"
-              className="relative z-10 aspect-[4/5] w-full rounded-[1.5rem] border border-white/10 object-cover object-center shadow-2xl"
+              className="relative z-10 aspect-[4/5] w-full rounded-[1.5rem] border border-white/10 object-cover object-center brightness-[0.94] shadow-2xl"
             />
             <div className="absolute -bottom-5 -right-4 z-20 rounded-xl border border-white/10 bg-slate-950/90 px-5 py-3 shadow-xl backdrop-blur">
               <p className="text-xs uppercase tracking-[0.18em] text-primary">Professional focus</p>
