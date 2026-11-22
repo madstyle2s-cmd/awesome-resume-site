@@ -34,7 +34,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="font-display text-2xl font-bold">
-            <span className="gradient-text">SS</span>
+            <span className="gradient-text">Shibly Sadik</span>
           </a>
 
           {/* Desktop Navigation */}
