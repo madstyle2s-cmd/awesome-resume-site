@@ -2,9 +2,9 @@ import { AnimatedSection } from '@/components/AnimatedSection';
 import { MessageCircle, ClipboardList, FileSpreadsheet } from 'lucide-react';
 
 const focusAreas = [
-  { icon: MessageCircle, title: 'Client Relations', detail: 'Clear communication, relationship management and consistent client follow-up.' },
-  { icon: ClipboardList, title: 'Credit Recovery & Realisation', detail: 'Outstanding account monitoring, payment follow-up and recovery coordination.' },
-  { icon: FileSpreadsheet, title: 'Excel Reporting', detail: 'Organised data handling, collection tracking and practical Excel-based reports.' },
+  { icon: MessageCircle, title: 'Client Relations', detail: 'Professional client communication, relationship management and consistent follow-up.' },
+  { icon: ClipboardList, title: 'Credit Collection & Recovery', detail: 'Outstanding account monitoring, payment commitment follow-up and credit realisation support.' },
+  { icon: FileSpreadsheet, title: 'Sound Knowledge of Microsoft Excel', detail: 'Using Excel to organise data, track collection performance and prepare clear reports.' },
 ];
 
 export const AboutSection = () => {
@@ -22,13 +22,10 @@ export const AboutSection = () => {
         <AnimatedSection delay={100}>
           <div className="mx-auto max-w-4xl rounded-3xl border border-border bg-secondary/70 p-7 shadow-2xl shadow-black/10 sm:p-10 lg:p-12">
             <p className="text-lg leading-8 text-muted-foreground">
-              I am a client-focused professional with experience in credit recovery and realisation, client relationship management and operational reporting. My work involves communicating with clients, following up on outstanding accounts, monitoring payment commitments and maintaining clear, accurate records.
+              I am a client relations and credit recovery professional with hands-on experience across banking, credit collection and business operations. My experience includes managing client communication, following up on outstanding accounts, monitoring payment commitments and supporting credit realisation.
             </p>
             <p className="mt-5 text-lg leading-8 text-muted-foreground">
-              I value practical problem-solving, professional communication and disciplined follow-through. I use Microsoft Excel to organise information, track collection progress and prepare reports that help teams understand account status and take timely action.
-            </p>
-            <p className="mt-5 text-lg leading-8 text-muted-foreground">
-              My experience across recovery, client service and business operations has helped me develop an adaptable approach to working with people, information and day-to-day responsibilities.
+              I bring sound knowledge of Microsoft Excel for organising data, preparing reports and monitoring collection performance. I combine a client-focused approach with practical recovery experience, analytical ability and a strong sense of responsibility.
             </p>
           </div>
         </AnimatedSection>
