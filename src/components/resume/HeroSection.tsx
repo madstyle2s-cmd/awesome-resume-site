@@ -2,22 +2,26 @@ import { Download, ArrowDown } from 'lucide-react';
 import profilePhoto from '@/assets/profile-photo-approved.jpg';
 
 export const HeroSection = () => (
-  <section className="relative overflow-hidden bg-background pt-20 sm:pt-24 lg:min-h-screen">
-    <div className="hero-atmosphere absolute inset-0" aria-hidden="true" />
-    <div className="container relative z-10 mx-auto flex items-center px-5 py-9 sm:px-6 sm:py-12 lg:min-h-[calc(100vh-5rem)] lg:py-16">
-      <div className="grid w-full items-center gap-8 sm:gap-10 lg:grid-cols-[minmax(280px,0.82fr)_minmax(0,1.18fr)] lg:gap-14 xl:gap-20">
-        <div className="relative mx-auto w-full max-w-[260px] sm:max-w-xs lg:max-w-[390px] lg:mx-0">
+  <section className="relative isolate overflow-hidden bg-background pt-20 sm:pt-24 lg:min-h-screen">
+    <div className="hero-atmosphere absolute inset-0 -z-10" aria-hidden="true" />
+    <div className="container relative z-10 mx-auto flex items-center px-5 py-10 sm:px-6 sm:py-14 lg:min-h-[calc(100svh-5rem)] lg:py-16">
+      <div className="mx-auto grid w-full max-w-6xl items-center gap-9 sm:gap-12 lg:grid-cols-[minmax(320px,0.9fr)_minmax(0,1.1fr)] lg:gap-14 xl:gap-20">
+        <div className="relative mx-auto w-full max-w-[280px] sm:max-w-[340px] lg:mx-0 lg:max-w-[420px]">
           <div className="absolute -inset-3 rounded-[1.8rem] border border-primary/20 sm:-inset-4 sm:rounded-[2rem]" />
-          <div className="absolute -inset-6 rounded-[2.2rem] bg-primary/10 blur-3xl" />
-          <img src={profilePhoto} alt="Portrait of Shibly Sadik" fetchPriority="high"
-            className="relative z-10 aspect-[4/5] w-full rounded-2xl border border-white/10 object-cover object-center brightness-[0.94] shadow-2xl sm:rounded-[1.5rem]" />
+          <div className="absolute -inset-7 rounded-[2.2rem] bg-primary/10 blur-3xl" />
+          <img
+            src={profilePhoto}
+            alt="Portrait of Shibly Sadik"
+            fetchPriority="high"
+            className="relative z-10 aspect-[4/5] w-full rounded-2xl border border-white/10 object-cover object-center shadow-2xl sm:rounded-[1.5rem]"
+          />
           <div className="absolute -bottom-4 right-2 z-20 max-w-[90%] rounded-xl border border-white/10 bg-slate-950/90 px-4 py-2.5 shadow-xl backdrop-blur sm:-right-4 sm:px-5 sm:py-3">
             <p className="text-[9px] uppercase tracking-[0.18em] text-primary sm:text-xs">Professional focus</p>
             <p className="mt-1 text-xs font-semibold text-white sm:text-sm">Client Relations &amp; Credit Recovery</p>
           </div>
         </div>
 
-        <div className="mx-auto max-w-2xl text-center lg:mx-0 lg:text-left">
+        <div className="mx-auto w-full max-w-2xl text-center lg:mx-0 lg:text-left">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-primary sm:mb-5 sm:text-sm">Hello, I’m</p>
           <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl xl:text-7xl">
             Shibly <span className="gradient-text">Sadik</span>
