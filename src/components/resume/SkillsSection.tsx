@@ -3,9 +3,9 @@ import { MessageSquare, ClipboardCheck, FileSpreadsheet, Briefcase } from 'lucid
 
 const skillCategories = [
   {
-    title: 'Core Skills',
+    title: 'Client Relations',
     icon: MessageSquare,
-    skills: ['Client Relations', 'Client Communication', 'Relationship Management', 'Client Follow-up'],
+    skills: ['Client Communication', 'Relationship Management', 'Client Follow-up'],
   },
   {
     title: 'Credit Recovery & Realisation',
@@ -13,9 +13,9 @@ const skillCategories = [
     skills: ['Collection Follow-up', 'Outstanding Account Monitoring', 'Payment Commitment Tracking', 'Recovery Coordination'],
   },
   {
-    title: 'Excel Reporting',
+    title: 'Sound Knowledge of Microsoft Excel',
     icon: FileSpreadsheet,
-    skills: ['Microsoft Excel', 'Collection Reports', 'Data Cleaning & Organisation', 'Status-wise Reporting'],
+    skills: ['Microsoft Excel', 'Data Organisation', 'Collection Tracking', 'Report Preparation'],
   },
   {
     title: 'Additional Experience',
