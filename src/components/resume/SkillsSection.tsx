@@ -1,84 +1,60 @@
 import { AnimatedSection } from '@/components/AnimatedSection';
-import { Code, Briefcase, MessageSquare, Lightbulb } from 'lucide-react';
+import { MessageSquare, ClipboardCheck, FileSpreadsheet, Briefcase } from 'lucide-react';
 
 const skillCategories = [
   {
-    title: 'Technical Skills',
-    icon: Code,
-    skills: ['Microsoft Excel', 'Microsoft PowerPoint', 'Microsoft Word', 'OpenAI Tools', 'Data Analytics'],
-  },
-  {
-    title: 'Professional Skills',
-    icon: Briefcase,
-    skills: [
-      'Supply Chain Strategy',
-      'Procurement & Sourcing',
-      'Inventory Management',
-      'Logistics & Distribution',
-      'Process Improvement',
-      'Risk Management',
-    ],
-  },
-  {
-    title: 'Soft Skills',
+    title: 'Client Relations',
     icon: MessageSquare,
-    skills: [
-      'Strategic Business Development',
-      'Relationship Management',
-      'Team Leadership',
-      'Cross-functional Collaboration',
-      'Excellent Communication',
-    ],
+    skills: ['Client Communication', 'Relationship Management', 'Client Follow-up'],
   },
   {
-    title: 'Core Strengths',
-    icon: Lightbulb,
-    skills: [
-      'Market Analysis & Research',
-      'Client Acquisition & Retention',
-      'Negotiation & Closing',
-      'Adaptability & Innovation',
-      'Results-Driven Approach',
-    ],
+    title: 'Credit Recovery & Realisation',
+    icon: ClipboardCheck,
+    skills: ['Collection Follow-up', 'Outstanding Account Monitoring', 'Payment Commitment Tracking', 'Recovery Coordination'],
+  },
+  {
+    title: 'Sound Knowledge of Microsoft Excel',
+    icon: FileSpreadsheet,
+    skills: ['Microsoft Excel', 'Data Organisation', 'Collection Tracking', 'Report Preparation'],
+  },
+  {
+    title: 'Additional Experience',
+    icon: Briefcase,
+    skills: ['Customer Service', 'Operational Coordination', 'Sales'],
   },
 ];
 
 const languages = [
-  { name: 'Bengali', level: 'Native', percentage: 100 },
-  { name: 'English', level: 'Proficient', percentage: 85 },
-  { name: 'Hindi', level: 'Conversational', percentage: 70 },
+  { name: 'Bengali', level: 'Native' },
+  { name: 'English', level: 'Working proficiency' },
+  { name: 'Hindi', level: 'Conversational' },
 ];
 
 export const SkillsSection = () => {
   return (
-    <section id="skills" className="py-24 bg-background">
+    <section id="skills" className="bg-background py-24 lg:py-28">
       <div className="container mx-auto px-6">
         <AnimatedSection>
-          <div className="text-center mb-16">
-            <p className="text-primary font-medium tracking-wider uppercase mb-4">Expertise</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold">
-              Skills & <span className="gradient-text">Competencies</span>
+          <div className="mb-14 text-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-primary">What I bring</p>
+            <h2 className="font-display text-4xl font-bold text-foreground sm:text-5xl">
+              Skills & <span className="gradient-text">Expertise</span>
             </h2>
           </div>
         </AnimatedSection>
-
-        {/* Skills Grid */}
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        <div className="mx-auto grid max-w-5xl gap-5 md:grid-cols-2">
           {skillCategories.map((category, index) => (
-            <AnimatedSection key={index} delay={index * 100}>
-              <div className="h-full gradient-card p-6 lg:p-8 rounded-2xl border border-border hover:border-primary/30 transition-all duration-300 card-shadow group">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <category.icon className="w-6 h-6 text-primary-foreground" />
+            <AnimatedSection key={category.title} delay={index * 100}>
+              <div className="h-full rounded-2xl border border-border bg-card p-7 transition duration-300 hover:border-primary/40">
+                <div className="mb-6 flex items-center gap-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <category.icon className="h-6 w-6" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground">{category.title}</h3>
+                  <h3 className="text-xl font-semibold text-foreground">{category.title}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill, i) => (
-                    <span
-                      key={i}
-                      className="px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default"
-                    >
+                  {category.skills.map((skill) => (
+                    <span key={skill} className="rounded-full border border-border bg-secondary px-4 py-2 text-sm text-secondary-foreground">
                       {skill}
                     </span>
                   ))}
@@ -87,26 +63,14 @@ export const SkillsSection = () => {
             </AnimatedSection>
           ))}
         </div>
-
-        {/* Languages */}
-        <AnimatedSection delay={400}>
-          <div className="max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-center mb-8">
-              Language <span className="gradient-text">Proficiency</span>
-            </h3>
-            <div className="space-y-6">
-              {languages.map((lang, index) => (
-                <div key={index} className="group">
-                  <div className="flex justify-between mb-2">
-                    <span className="font-medium text-foreground">{lang.name}</span>
-                    <span className="text-muted-foreground text-sm">{lang.level}</span>
-                  </div>
-                  <div className="h-3 rounded-full bg-secondary overflow-hidden">
-                    <div
-                      className="h-full gradient-bg rounded-full transition-all duration-1000 ease-out group-hover:glow"
-                      style={{ width: `${lang.percentage}%` }}
-                    />
-                  </div>
+        <AnimatedSection delay={450}>
+          <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-border bg-card p-7">
+            <h3 className="mb-5 text-center text-xl font-semibold text-foreground">Languages</h3>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {languages.map((language) => (
+                <div key={language.name} className="text-center">
+                  <p className="font-semibold text-foreground">{language.name}</p>
+                  <p className="mt-1 text-sm text-muted-foreground">{language.level}</p>
                 </div>
               ))}
             </div>
