@@ -20,7 +20,7 @@ const skillCategories = [
   {
     title: 'Additional Experience',
     icon: Briefcase,
-    skills: ['Sales Support', 'Customer Service', 'Operational Coordination'],
+    skills: ['Customer Service', 'Operational Coordination', 'Sales'],
   },
 ];
 
