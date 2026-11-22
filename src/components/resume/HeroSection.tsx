@@ -1,93 +1,55 @@
-import { Mail, Phone, MapPin, Download } from 'lucide-react';
+import { Download, ArrowDown } from 'lucide-react';
 import profilePhoto from '@/assets/profile-photo.png';
 
 export const HeroSection = () => {
   return (
-    <section className="min-h-screen gradient-hero flex items-center justify-center relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/5 rounded-full blur-3xl animate-float delay-500" />
-      </div>
-
-      <div className="container mx-auto px-6 py-20 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          {/* Profile Image */}
-          <div className="animate-fade-up">
-            <div className="relative">
-              <div className="absolute inset-0 gradient-bg rounded-full blur-2xl opacity-30 animate-pulse-glow" />
-              <img
-                src={profilePhoto}
-                alt="Shibly Sadik"
-                className="w-48 h-48 lg:w-64 lg:h-64 rounded-full object-cover border-4 border-primary/30 relative z-10 glow"
-              />
+    <section className="relative min-h-screen overflow-hidden bg-background pt-24">
+      <div className="absolute inset-0 hero-atmosphere" aria-hidden="true" />
+      <div className="absolute left-0 top-1/4 h-72 w-24 bg-primary/10 blur-3xl" aria-hidden="true" />
+      <div className="container relative z-10 mx-auto flex min-h-[calc(100vh-6rem)] items-center px-6 py-12 lg:py-16">
+        <div className="grid w-full items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+          <div className="relative mx-auto w-full max-w-md animate-fade-up lg:mx-0">
+            <div className="absolute -inset-4 rounded-[2rem] border border-primary/20" />
+            <div className="absolute -inset-8 rounded-[2.5rem] bg-primary/10 blur-3xl" />
+            <img
+              src={profilePhoto}
+              alt="Portrait of Shibly Sadik"
+              className="relative z-10 aspect-[4/5] w-full rounded-[1.5rem] border border-white/10 object-cover object-center shadow-2xl"
+            />
+            <div className="absolute -bottom-5 -right-4 z-20 rounded-xl border border-white/10 bg-slate-950/90 px-5 py-3 shadow-xl backdrop-blur">
+              <p className="text-xs uppercase tracking-[0.18em] text-primary">Professional focus</p>
+              <p className="mt-1 text-sm font-semibold text-white">Client Relations & Credit Recovery</p>
             </div>
           </div>
 
-          {/* Hero Content */}
-          <div className="text-center lg:text-left flex-1">
-            <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full gradient-bg glow mb-4 animate-fade-up delay-100">
-              <span className="text-primary-foreground font-semibold tracking-wide uppercase text-sm">
-                Collection Manager
-              </span>
-            </div>
-            <h1 className="font-display text-5xl lg:text-7xl font-bold mb-6 animate-fade-up delay-200">
+          <div className="max-w-2xl text-center lg:text-left">
+            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.32em] text-primary">Hello, I’m</p>
+            <h1 className="font-display text-5xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
               Shibly <span className="gradient-text">Sadik</span>
             </h1>
-            <p className="text-muted-foreground text-lg lg:text-xl max-w-2xl mb-8 animate-fade-up delay-300 leading-relaxed">
-              Seasoned professional with extensive experience in supply chain management, 
-              branch supervision, and strategic operations optimization.
+            <p className="mt-6 text-xl font-medium leading-relaxed text-sky-200 sm:text-2xl">
+              Client Relations <span className="text-primary">·</span> Credit Recovery & Realisation
             </p>
-
-            {/* Contact Info */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8 animate-fade-up delay-400">
-              <a
-                href="mailto:saikat2s@hotmail.com"
-                className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary hover:bg-secondary/80 transition-all duration-300 hover:scale-105"
-              >
-                <Mail className="w-4 h-4 text-primary" />
-                <span className="text-sm text-secondary-foreground">saikat2s@hotmail.com</span>
+            <p className="mx-auto mt-6 max-w-xl text-base leading-8 text-muted-foreground lg:mx-0 lg:text-lg">
+              I work across client relationship management, credit recovery and realisation, and Excel-based reporting. I focus on clear communication, consistent account follow-up and accurate reporting that supports day-to-day decisions.
+            </p>
+            <div className="mt-9 flex flex-wrap justify-center gap-4 lg:justify-start">
+              <a href="/Shibly_Sadik_Resume.pdf" download className="inline-flex items-center gap-3 rounded-full bg-primary px-7 py-4 font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition hover:-translate-y-0.5 hover:brightness-110">
+                <Download className="h-5 w-5" /> Download CV
               </a>
-              <a
-                href="tel:+8801303136631"
-                className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary hover:bg-secondary/80 transition-all duration-300 hover:scale-105"
-              >
-                <Phone className="w-4 h-4 text-primary" />
-                <span className="text-sm text-secondary-foreground">+880 01303136631</span>
-              </a>
-              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary">
-                <MapPin className="w-4 h-4 text-primary" />
-                <span className="text-sm text-secondary-foreground">Dhaka, Bangladesh</span>
-              </div>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="animate-fade-up delay-500 flex flex-wrap justify-center lg:justify-start gap-4">
-              <a
-                href="/Shibly_Sadik_Resume.pdf"
-                download
-                className="inline-flex items-center gap-2 px-8 py-4 gradient-bg rounded-full text-primary-foreground font-semibold hover:opacity-90 transition-all duration-300 hover:scale-105 glow"
-              >
-                <Download className="w-5 h-5" />
-                Download Resume
-              </a>
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105"
-              >
-                Get In Touch
+              <a href="#about" className="inline-flex items-center gap-2 rounded-full border border-white/20 px-7 py-4 font-semibold text-foreground transition hover:border-primary hover:text-primary">
+                Explore Profile <ArrowDown className="h-4 w-4" />
               </a>
             </div>
-          </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-fade-up delay-700">
-          <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center pt-2">
-            <div className="w-1 h-3 bg-primary rounded-full animate-bounce" />
+            <div className="mt-10 flex flex-wrap justify-center gap-x-7 gap-y-3 text-sm text-muted-foreground lg:justify-start">
+              <span>Dhaka, Bangladesh</span>
+              <a className="transition hover:text-primary" href="mailto:saikat2s@hotmail.com">saikat2s@hotmail.com</a>
+              <a className="transition hover:text-primary" href="tel:+8801303136631">+880 1303-136631</a>
+            </div>
           </div>
         </div>
       </div>
+      <div className="pointer-events-none absolute bottom-0 left-0 h-px w-full bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
     </section>
   );
 };
