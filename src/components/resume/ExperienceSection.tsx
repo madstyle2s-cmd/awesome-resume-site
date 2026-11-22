@@ -18,7 +18,7 @@ const experiences = [
     title: 'Collection Officer — Recovery and Legal Department',
     company: 'City Bank PLC',
     location: 'Bangladesh',
-    period: 'Dates to be confirmed',
+    period: '04 Feb 2026 – 30 Aug 2026',
     responsibilities: [],
   },
   {
