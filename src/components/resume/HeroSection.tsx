@@ -28,10 +28,11 @@ export const HeroSection = () => {
               Shibly <span className="gradient-text">Sadik</span>
             </h1>
             <p className="mt-6 text-xl font-medium leading-relaxed text-sky-200 sm:text-2xl">
-              Client Relations <span className="text-primary">·</span> Credit Recovery & Realisation
+              <span className="block">CR – Credit Realisation</span>
+              <span className="mt-2 block text-base font-medium leading-relaxed text-sky-100 sm:text-lg">Credit Collection &amp; Recovery and Reporting</span>
             </p>
             <p className="mx-auto mt-6 max-w-xl text-base leading-8 text-muted-foreground lg:mx-0 lg:text-lg">
-              I work across client relationship management, credit recovery and realisation, and Excel-based reporting. I focus on clear communication, consistent account follow-up and accurate reporting that supports day-to-day decisions.
+              I work in client relations, credit collection and recovery, and credit realisation. I bring sound knowledge of Microsoft Excel for organising information, tracking collection progress and preparing clear reports that support day-to-day decisions.
             </p>
             <div className="mt-9 flex flex-wrap justify-center gap-4 lg:justify-start">
               <a href="/Shibly_Sadik_Resume.pdf" download className="inline-flex items-center gap-3 rounded-full bg-primary px-7 py-4 font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition hover:-translate-y-0.5 hover:brightness-110">
