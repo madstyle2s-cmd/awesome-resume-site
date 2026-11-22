@@ -11,7 +11,7 @@ const experiences = [
       'Follow up with clients on payment commitments and outstanding amounts.',
       'Monitor credit realisation and collection status.',
       'Maintain client communication and support account follow-up.',
-      'Prepare and update Excel-based collection reports.',
+      'Prepare and update collection tracking reports using Microsoft Excel.',
     ],
   },
   {
@@ -25,7 +25,7 @@ const experiences = [
     title: 'Supply Chain Manager',
     company: 'Protection One Pvt. Ltd.',
     location: 'Dhaka, Bangladesh',
-    period: 'Mar 2024 – date to be confirmed',
+    period: 'Mar 2024 – Nov 2024',
     responsibilities: [
       'Coordinated procurement, sourcing and supplier communication.',
       'Supported inventory, logistics and operational reporting.',
