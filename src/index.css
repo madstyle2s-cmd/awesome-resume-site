@@ -63,6 +63,12 @@
       radial-gradient(ellipse at 78% 12%, hsl(202 100% 50% / 0.12), transparent 35%),
       linear-gradient(135deg, hsl(215 72% 8%), hsl(215 66% 12%) 55%, hsl(215 72% 7%));
   }
+  .hero-cinematic-bg {
+    background:
+      radial-gradient(ellipse at 22% 44%, rgba(18, 111, 190, .34), transparent 39%),
+      radial-gradient(ellipse at 77% 25%, rgba(13, 82, 150, .28), transparent 36%),
+      linear-gradient(110deg, #071d36 0%, #092746 45%, #041329 100%);
+  }
 }
 @keyframes fade-up { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
