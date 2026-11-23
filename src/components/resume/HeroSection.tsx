@@ -2,66 +2,60 @@ import { ArrowDown, Download, BriefcaseBusiness, Handshake, FileSpreadsheet } fr
 import profilePhoto from '@/assets/profile-photo-approved.jpg';
 
 const highlights = [
-  { icon: BriefcaseBusiness, title: 'Credit Realisation', detail: 'Collection follow-up & account support' },
-  { icon: Handshake, title: 'Client Relations', detail: 'Professional client communication' },
-  { icon: FileSpreadsheet, title: 'Excel Reporting', detail: 'Tracking, analysis & reporting' },
+  { icon: BriefcaseBusiness, value: '5+', title: 'Years Experience' },
+  { icon: Handshake, value: 'Client', title: 'Relations' },
+  { icon: FileSpreadsheet, value: 'Excel', title: 'Reporting' },
 ];
 
 export const HeroSection = () => (
-  <section id="home" className="relative isolate min-h-[100svh] overflow-hidden bg-[#06172d] pt-20 text-white">
-    <div className="hero-cinematic-bg absolute inset-0 -z-20" aria-hidden="true" />
-    <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#06172d]/20 via-[#06172d]/55 to-[#06172d]/85" aria-hidden="true" />
-    <div className="pointer-events-none absolute -left-32 top-20 -z-10 h-[28rem] w-[28rem] rounded-full bg-sky-500/20 blur-[110px]" aria-hidden="true" />
-    <div className="pointer-events-none absolute -right-32 bottom-24 -z-10 h-[30rem] w-[30rem] rounded-full bg-blue-600/20 blur-[120px]" aria-hidden="true" />
+  <section id="home" className="hero-reference relative isolate min-h-[100svh] overflow-hidden text-white">
+    <div className="hero-office absolute inset-0 -z-30" aria-hidden="true" />
+    <div className="absolute inset-0 -z-20 bg-[linear-gradient(90deg,rgba(3,17,36,.12)_0%,rgba(4,24,48,.34)_46%,rgba(3,17,36,.72)_100%)]" aria-hidden="true" />
+    <div className="absolute inset-0 -z-20 bg-[linear-gradient(180deg,rgba(2,14,30,.52)_0%,transparent_22%,transparent_72%,rgba(2,14,30,.48)_100%)]" aria-hidden="true" />
+    <div className="pointer-events-none absolute -left-24 top-28 -z-10 h-[32rem] w-[32rem] -skew-x-12 bg-gradient-to-br from-blue-600/25 to-transparent blur-2xl" aria-hidden="true" />
 
-    <div className="mx-auto grid min-h-[calc(100svh-5rem)] w-full max-w-[1500px] items-center gap-8 px-5 pb-36 pt-10 sm:px-8 lg:grid-cols-[minmax(0,1.02fr)_minmax(0,0.98fr)] lg:gap-10 lg:px-14 lg:pb-40 lg:pt-8">
-      <div className="relative order-1 mx-auto flex h-full w-full max-w-[560px] items-end justify-center self-end lg:mx-0 lg:max-w-none">
-        <div className="pointer-events-none absolute bottom-8 left-1/2 h-[72%] w-[82%] -translate-x-1/2 rounded-full bg-sky-400/20 blur-[90px]" />
-        <div className="relative w-full max-w-[540px] overflow-hidden rounded-t-[48%] border-x border-t border-white/10 bg-gradient-to-b from-slate-100/95 via-slate-200/95 to-slate-300/70 p-1 shadow-[0_0_90px_rgba(14,165,233,0.16)] lg:rounded-t-[48%]">
-          <img
-            src={profilePhoto}
-            alt="Portrait of Shibly Sadik"
-            fetchPriority="high"
-            className="relative z-10 aspect-[4/5] w-full object-cover object-top"
-          />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-24 bg-gradient-to-t from-[#071a32]/55 to-transparent" />
-        </div>
+    <div className="mx-auto grid min-h-[100svh] max-w-[1600px] grid-cols-1 items-center px-5 pb-48 pt-28 sm:px-8 lg:grid-cols-[1.08fr_.92fr] lg:gap-3 lg:px-12 lg:pb-36 lg:pt-24 xl:px-16">
+      <div className="relative order-2 flex h-full min-h-[360px] items-end justify-center lg:order-1 lg:min-h-[calc(100svh-9rem)] lg:justify-start">
+        <div className="pointer-events-none absolute bottom-10 left-1/2 h-2/3 w-4/5 -translate-x-1/2 rounded-full bg-sky-500/20 blur-[100px] lg:left-1/3" />
+        <img
+          src={profilePhoto}
+          alt="Shibly Sadik"
+          fetchPriority="high"
+          className="hero-portrait relative z-10 max-h-[76svh] w-full max-w-[760px] object-contain object-bottom lg:absolute lg:bottom-0 lg:left-[-4.5rem] lg:max-h-[82svh] lg:w-[112%] lg:max-w-none lg:object-contain lg:object-bottom"
+        />
       </div>
 
-      <div className="order-2 mx-auto w-full max-w-2xl pb-8 text-center lg:mx-0 lg:pb-14 lg:text-left">
-        <p className="mb-4 text-xs font-bold uppercase tracking-[0.34em] text-sky-300 sm:text-sm">Hello, I’m</p>
-        <h1 className="font-display text-5xl font-extrabold leading-[1.04] tracking-tight text-white sm:text-6xl xl:text-7xl 2xl:text-8xl">
+      <div className="relative z-20 order-1 mx-auto w-full max-w-2xl pb-8 text-center lg:order-2 lg:mx-0 lg:pb-10 lg:pl-2 lg:text-left">
+        <p className="mb-4 text-sm font-semibold uppercase tracking-[0.34em] text-sky-300 sm:text-base">Hello, I’m</p>
+        <h1 className="font-display text-5xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-6xl xl:text-7xl 2xl:text-[5.8rem]">
           Shibly Sadik
         </h1>
-        <p className="mt-5 text-xl font-semibold text-sky-300 sm:text-2xl xl:text-3xl">CR – Credit Realisation</p>
-        <div className="my-6 h-1 w-24 rounded-full bg-sky-400 mx-auto lg:mx-0" />
-        <p className="mx-auto max-w-xl text-base leading-8 text-slate-200 sm:text-lg sm:leading-8 lg:mx-0 xl:text-xl">
-          Credit Collection &amp; Recovery and Reporting
+        <p className="mt-5 text-lg font-semibold text-sky-300 sm:text-2xl xl:text-[1.7rem]">Professional | Business Minded | Goal Oriented</p>
+        <div className="my-7 h-1 w-28 rounded-full bg-sky-400 mx-auto lg:mx-0" />
+        <p className="max-w-xl text-lg leading-[1.65] text-slate-200 sm:text-xl xl:text-[1.7rem]">
+          With a strong background in client relations, credit collection and recovery, and credit realisation, I am committed to delivering reliable service and results.
         </p>
-        <p className="mx-auto mt-3 max-w-xl text-sm leading-7 text-slate-300 sm:text-base sm:leading-8 lg:mx-0">
-          I work across client relations, credit collection and recovery, credit realisation, and Excel-based reporting. I focus on clear communication, consistent follow-up, and organised information that supports effective decisions.
-        </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-3 sm:gap-4 lg:justify-start">
-          <a href="/Shibly_Sadik_Resume.pdf" download className="inline-flex items-center gap-3 rounded-full bg-blue-600 px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-blue-600/25 transition hover:-translate-y-0.5 hover:bg-blue-500 sm:px-8 sm:py-4 sm:text-base">
-            <Download className="h-5 w-5" /> Download CV
+        <div className="mt-9 flex flex-wrap justify-center gap-4 lg:justify-start">
+          <a href="/Shibly_Sadik_Resume.pdf" download className="inline-flex min-w-[210px] items-center justify-center gap-3 rounded-full bg-blue-600 px-8 py-4 text-base font-bold text-white shadow-[0_10px_35px_rgba(0,105,255,.3)] transition hover:-translate-y-0.5 hover:bg-blue-500">
+            <Download className="h-5 w-5" /> View My CV
           </a>
-          <a href="#about" className="inline-flex items-center gap-3 rounded-full border border-sky-200/80 px-7 py-3.5 text-sm font-semibold text-white transition hover:border-sky-300 hover:bg-white/10 sm:px-8 sm:py-4 sm:text-base">
-            <ArrowDown className="h-4 w-4" /> Learn More
+          <a href="#about" className="inline-flex min-w-[210px] items-center justify-center gap-3 rounded-full border-2 border-sky-100/90 px-8 py-4 text-base font-semibold text-white transition hover:border-sky-300 hover:bg-white/10">
+            <span className="text-xl leading-none">▶</span> Learn More
           </a>
         </div>
       </div>
     </div>
 
-    <div className="absolute inset-x-0 bottom-0 border-y border-white/15 bg-slate-950/45 backdrop-blur-xl">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 divide-y divide-white/15 px-6 sm:grid-cols-3 sm:divide-x sm:divide-y-0 lg:px-10">
-        {highlights.map(({ icon: Icon, title, detail }) => (
-          <div key={title} className="flex items-center justify-center gap-4 px-3 py-4 sm:justify-start sm:px-6 sm:py-6">
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-sky-400/50 bg-sky-400/10 text-sky-200 sm:h-14 sm:w-14">
-              <Icon className="h-6 w-6 sm:h-7 sm:w-7" />
+    <div className="absolute inset-x-0 bottom-0 z-30 border-y border-white/20 bg-slate-950/40 backdrop-blur-xl">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 divide-y divide-white/25 px-5 sm:grid-cols-3 sm:divide-x sm:divide-y-0 sm:px-8">
+        {highlights.map(({ icon: Icon, value, title }) => (
+          <div key={title} className="flex items-center justify-center gap-5 px-4 py-4 sm:py-6">
+            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-sky-300/35 bg-sky-400/5 text-white">
+              <Icon className="h-7 w-7" />
             </span>
-            <span className="min-w-0">
-              <span className="block text-sm font-bold text-white sm:text-base">{title}</span>
-              <span className="mt-1 block text-xs leading-5 text-slate-300 sm:text-sm">{detail}</span>
+            <span>
+              <span className="block text-2xl font-bold leading-none text-white sm:text-3xl">{value}</span>
+              <span className="mt-2 block text-sm text-slate-200 sm:text-base">{title}</span>
             </span>
           </div>
         ))}
